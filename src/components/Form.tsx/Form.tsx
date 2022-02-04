@@ -50,11 +50,12 @@ export const FormProfile: React.FC<FormProfileType> = ({
       initialValues={initialValues}
       enableReinitialize={true}
       validationSchema={ProfileSchema}
+      validateOnBlur={true}
       onSubmit={(values) => {
-        onSubmit(values);
+          onSubmit(values);
       }}
     >
-      {({ touched, errors, values, isSubmitting }) => {
+      {({ touched, errors, values, isValid }) => {
         return (
           <Form className='form'>
             <div className="form__fields">
@@ -65,7 +66,6 @@ export const FormProfile: React.FC<FormProfileType> = ({
                 readOnly={readOnly}
                 className={errors.name && touched.name ? 'input--error' : ''}
               />
-              {errors.name && touched.name}
 
               <label htmlFor="username">User name</label>
               <Field
@@ -136,10 +136,9 @@ export const FormProfile: React.FC<FormProfileType> = ({
             </div>
             <Button
               context='Отправить'
-              color={isSubmitting ? 'disable' : 'active'}
+              color={isValid ? 'active' : 'disable'}
               type='submit'
-              disabled={isSubmitting}
-              onClick={() => onSubmit(values)}
+              disabled={!isValid}
             />
           </Form>
         )}}
