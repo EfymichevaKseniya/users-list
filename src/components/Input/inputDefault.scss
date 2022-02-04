@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+
+.input {
+  &__text {
+    width: 211px;
+    height: 22px;
+    border: 1px solid $readonly;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    &:read-only {
+      background-color: $readonly;
+    }
+  }
+
+  &--error {
+    border: 1px solid $error;
+  }
+}

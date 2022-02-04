@@ -1,0 +1,24 @@
+@import '../../styles/colors.scss';
+
+.card__item {
+  display: flex;
+  background-color: $item-bg;
+  border-radius: 8px;
+  padding: 10px;
+  justify-content: space-between;
+
+  &-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: $gray;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &-txt {
+    color: $black;
+    margin-left: 5px;
+  }
+}

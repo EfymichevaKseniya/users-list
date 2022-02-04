@@ -1,0 +1,16 @@
+.profile {
+  margin-left: 36px;
+  margin-top: 19px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
