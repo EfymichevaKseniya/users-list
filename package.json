@@ -2,6 +2,7 @@
   "name": "users-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://reniary.github.io/users-list",
   "dependencies": {
     "formik": "^2.2.9",
     "react": "^17.0.2",
