@@ -12,7 +12,7 @@ export const CardList: React.ComponentType<CardListType> = ({
   cards,
   filter,
 }) => {
-  // console.log(filter)
+  console.log(filter)
   if (filter === 'city') {
     cards.sort((a: CardType, b: CardType) => a.address!.city.localeCompare(b.address!.city))
   } else  if (filter === 'company') {

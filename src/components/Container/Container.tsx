@@ -1,9 +1,14 @@
 import React from 'react';
 import './container.scss';
 
-export function Container() {
+export interface LayoutProps  { 
+  children: React.ReactNode
+}
+
+export function Container(props : LayoutProps) {
   return (
     <div className="container">
+      {props.children}
     </div>
   )
 }

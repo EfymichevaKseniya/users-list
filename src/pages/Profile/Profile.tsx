@@ -27,7 +27,7 @@ export const Profile: React.FC = () => {
 
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <section className="profile">
         <div className="profile__top">
           <h3 className="profile__top-title">Профиль пользователя</h3>

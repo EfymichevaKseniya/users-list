@@ -55,7 +55,7 @@ export const FormProfile: React.FC<FormProfileType> = ({
           onSubmit(values);
       }}
     >
-      {({ touched, errors, values, isValid }) => {
+      {({ touched, errors, isValid }) => {
         return (
           <Form className='form'>
             <div className="form__fields">

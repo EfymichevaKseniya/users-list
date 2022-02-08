@@ -10,17 +10,9 @@ export type FilterType = {
 export const Sidebar: React.ComponentType<FilterType> = ({
   onClick = () => {},
 }) => {
-
-  // const [filter, setFilter] = useState(sort)
-
-  // useEffect(() => {
-  //   onclick();
-  // }, [])
-  // console.log(sort)
-
   return (
-    <div className="sidebar">
-      <h3 className="sidebar__title">Сортировка</h3>
+    <div className='sidebar'>
+      <h3 className='sidebar__title'>Сортировка</h3>
         <Button
           context='по городу'
           color='normal'
