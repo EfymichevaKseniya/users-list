@@ -3,7 +3,6 @@ import './sidebar.scss';
 import { Button } from '../Button/Button';
 
 export type FilterType = {
-  sort?: string;
   onClick?: (data: string) => void;
 }
 

@@ -7,7 +7,6 @@ import { Container } from './components/Container/Container';
 import { Page } from './components/Page/Page';
 
 function App() {
-
   return (
     <div className='App'>
       <Container>

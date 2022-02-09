@@ -12,6 +12,9 @@ export const Page: React.FC<PageProps> = ({children}) => {
 
   const handleClick = (filter: string) => {
     setFilter(filter);
+    if (filter !== '') {
+      window.location.search = window.location.search.replace(window.location.search, `filter=${filter}`);
+    }
   }
 
   return (
