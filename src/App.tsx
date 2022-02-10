@@ -12,8 +12,10 @@ function App() {
       <Container>
         <Page>
           <Routes>
-            <Route path='/' element={<Main />} />
-            <Route path='/form/:id' element={<Profile />} />
+            {/* <Route path='/' element={<Page />}> */}
+              <Route index element={<Main />} />
+              <Route path='form/:id' element={<Profile />} />
+            {/* </Route> */}
           </Routes>
         </Page>
       </Container>

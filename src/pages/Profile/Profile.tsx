@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '../../components/Button/Button';
 import { CardType } from '../../components/Card/Card';
-import { Sidebar } from '../../components/Sidebar/Sidebar';
 import './profile.scss';
 import { FormProfile } from '../../components/Form.tsx/Form';
 
